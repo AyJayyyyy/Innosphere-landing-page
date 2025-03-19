@@ -1,4 +1,4 @@
-/* Services Section Styles */
+/* Services Section */
 #services-section {
     height: 60vh;
     padding: 50px;
@@ -43,10 +43,8 @@
     min-height: 100%;
 }
 
-/* Individual Service Cards */
-#service-innosphere-1,
-#service-innosphere-2,
-#service-innosphere-3 {
+/* Service Card Styles */
+#service-innosphere-1, #service-innosphere-2, #service-innosphere-3 {
     flex: 1;
     padding: 40px;
     border-radius: 44px 0px 0px 44px;
@@ -68,10 +66,8 @@
     background-color: #215379;
 }
 
-/* Content Inside Service Cards */
-#service-innosphere-content-1,
-#service-innosphere-content-2,
-#service-innosphere-content-3 {
+/* Service Card Content */
+#service-innosphere-content-1, #service-innosphere-content-2, #service-innosphere-content-3 {
     background-color: transparent;
     width: 90%;
     height: 300px;
@@ -96,8 +92,9 @@
     margin-bottom: 5px;
 }
 
-/* Button Styling */
-button {
+#service-innosphere-content-1 button,
+#service-innosphere-content-2 button,
+#service-innosphere-content-3 button {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -107,18 +104,24 @@ button {
     margin-top: 5px;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Specific Text Color */
+#service-innosphere-content-1 h2 {
+    color: #003366;
 }
 
-#service-innosphere-2 button,
-#service-innosphere-3 button {
-    background-color: #007bff;
-    color: rgb(255, 255, 255);
-    border: 3px solid #007bff;
+#service-innosphere-content-2 h2, 
+#service-innosphere-content-3 h2 {
+    color: #FFFFFF;
 }
 
-#service-innosphere-2 button:hover,
-#service-innosphere-3 button:hover {
-    background-color: #ccc;
+#service-innosphere-content-1 p {
+    color: #333;
+}
+
+#service-innosphere-content-2 p {
+    color: #ffffffce;
+}
+
+#service-innosphere-content-3 p {
+    color: #ffffffa1;
 }
