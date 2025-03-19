@@ -1,0 +1,58 @@
+/* Navbar Container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 30px;
+    z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo {
+    padding: 15px;
+}
+
+.navbar-logo img {
+    height: 60px;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Contact Button */
+.navbar-button {
+    text-align: center;
+    padding: 15px;
+}
+
+.navbar-button a {
+    background-color: #007bff;
+    color: white;
+    margin: 60px;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 18px;
+    display: inline-block;
+}
