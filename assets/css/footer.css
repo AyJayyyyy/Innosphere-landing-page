@@ -1,0 +1,134 @@
+/* Footer Section */
+#footer-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+    color: var(--black);
+    padding: 75px;
+    gap: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Footer Heading */
+#footer-heading-container {
+    width: 100%;
+    text-align: center;
+}
+
+#footer-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0A142F;
+}
+
+/* Footer Text */
+#footer-text-container {
+    text-align: center;
+    max-width: 850px;
+    width: 100%;
+}
+
+#footer-text {
+    color: #0A142F;
+    padding: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Footer Buttons */
+#footer-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#footer-buttons img {
+    padding: 10px;
+    background-color: #F7F9FB;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+/* Footer Bottom */
+#footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+/* Footer Logo */
+#footer-logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#footer-logo {
+    height: 50px;
+}
+
+/* Footer Copyright */
+#footer-copyright {
+    flex: 1;
+    text-align: center;
+}
+
+/* Footer Social Icons */
+#footer-social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#footer-social-icons img {
+    height: 40px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust the padding */
+    #footer-section {
+        padding: 50px 20px;
+    }
+
+    /* Adjust Footer Heading */
+    #footer-heading {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust Footer Text */
+    #footer-text {
+        font-size: 1rem;
+    }
+
+    /* Stack Footer Buttons Vertically */
+    #footer-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Stack Footer Bottom Content */
+    #footer-logo-container,
+    #footer-copyright,
+    #footer-social-icons {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    /* Adjust Social Media Icon Size */
+    #footer-social-icons img {
+        height: 30px;
+    }
+}

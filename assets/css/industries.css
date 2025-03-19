@@ -1,0 +1,73 @@
+/* Industries Section Styles */
+#industries-section {
+    height: 700px;
+    width: 100%;
+    background: url("assets/images/IndustriesBG.png") no-repeat center center/cover;
+    position: relative;
+}
+
+/* Container for header and options */
+#industries-container {
+    padding-top: 60px;
+}
+
+/* Industries header */
+#industries-header {
+    text-align: left;
+    margin-left: 40px;
+}
+
+#industries-header h1 {
+    font-family: Inter, sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    color: #FFFFFF;
+    margin: 0 0 5px 0;
+}
+
+#industries-header p {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 30px 0;
+    max-width: 600px;
+}
+
+/* Industries options container */
+#industries-options {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Individual Industry Card */
+.industries-card {
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 365px;
+    height: 250px;
+}
+
+.industries-card h2 {
+    font-family: Inter, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #000000;
+    margin: 0;
+    letter-spacing: -1.6px;
+}
+
+.industries-card p {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #666;
+    margin-top: 10px;
+}

@@ -1,0 +1,124 @@
+/* Services Section Styles */
+#services-section {
+    height: 60vh;
+    padding: 50px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* First Column: Title & Description */
+#services-header {
+    background-color: transparent;
+    flex-basis: 20%;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+#services-header h2 {
+    font-family: Inter, sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    margin: 0;
+    color: #000;
+    letter-spacing: -1.6px;
+}
+
+#services-header p {
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    color: #00000098;
+    letter-spacing: -1.6px;
+}
+
+/* Second Column: Service Cards */
+#services-container {
+    background-color: transparent;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+/* Individual Service Cards */
+#service-innosphere-1,
+#service-innosphere-2,
+#service-innosphere-3 {
+    flex: 1;
+    padding: 40px;
+    border-radius: 44px 0px 0px 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#service-innosphere-1 {
+    background-color: #E0DBD9;
+}
+
+#service-innosphere-2 {
+    background-color: #55636D;
+}
+
+#service-innosphere-3 {
+    background-color: #215379;
+}
+
+/* Content Inside Service Cards */
+#service-innosphere-content-1,
+#service-innosphere-content-2,
+#service-innosphere-content-3 {
+    background-color: transparent;
+    width: 90%;
+    height: 300px;
+    text-align: left;
+    padding: 20px;
+}
+
+#service-innosphere-content-1 h2,
+#service-innosphere-content-2 h2,
+#service-innosphere-content-3 h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#service-innosphere-content-1 p,
+#service-innosphere-content-2 p,
+#service-innosphere-content-3 p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#service-innosphere-2 button,
+#service-innosphere-3 button {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    border: 3px solid #007bff;
+}
+
+#service-innosphere-2 button:hover,
+#service-innosphere-3 button:hover {
+    background-color: #ccc;
+}
