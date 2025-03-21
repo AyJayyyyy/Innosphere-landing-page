@@ -12,7 +12,7 @@
 #about-first-column {
     width: 60%;
     position: relative;
-    margin-left: auto;
+    margin-left: 50px; /* Increase this value to move it more to the right */
 }
 
 #about-text {
@@ -34,11 +34,10 @@
 }
 
 #about-image1 {
-    width: 750px;
-    display: block;
-    border-radius: 12px;
-    margin-top: 100px;
-    margin-left: auto;
+    width: 63%;
+    max-width: 3250px;
+    margin-top: 110px;
+    margin-left: 380px; /* Moves the image further to the right */
 }
 
 #about-second-column {
@@ -104,79 +103,87 @@
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
     #about-section {
         flex-direction: column;
         height: auto;
-        padding: 40px 20px;
         text-align: center;
+        padding: 20px;
     }
 
+    /* First Column Adjustments */
     #about-first-column {
         width: 100%;
         margin: 0;
-        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #about-text {
-        position: relative;
-        top: 0;
-        left: 0;
-        text-align: center;
+        position: static;
         width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     #about-text h1 {
-        font-size: 50px; /* Adjust size for mobile */
+        font-size: 16vw; /* Adjusts based on screen width */
         line-height: 1.1;
         white-space: nowrap; /* Prevents line break */
-        display: inline-block;
-        margin: 0 auto;
-        word-spacing: -2px; /* Reduce space between words */
+        display: inline-block; /* Ensures inline behavior */
     }
 
+    /* Reduce About Image 1 size */
     #about-image1 {
-        width: 100%;
-        max-width: 400px;
-        margin: 20px auto;
+        width: 90% !important; /* Adjust width for mobile */
+        max-width: 370px !important; /* Limit max size */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto !important; /* Center the image */
+        display: block;
     }
 
+    /* Second Column Adjustments */
     #about-second-column {
         width: 100%;
         padding: 20px;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+        align-items: flex-start; /* Align text to the left */
+        text-align: left;
     }
 
     #about-heading {
-        font-size: 40px;
+        font-size: 48px; /* Increased size */
         width: 100%;
     }
 
     #about-subheading {
-        font-size: 24px;
+        font-size: 22px; /* Increased size */
         width: 100%;
     }
 
     #about-image-container {
         width: 100%;
-        max-width: 400px;
-        margin: 20px auto;
     }
 
+    #about-image2 {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    /* Left-align About Info Section */
     #about-info-heading {
-        font-size: 24px;
+        font-size: 26px; /* Adjusted for mobile */
     }
 
     #about-info-text {
-        font-size: 16px;
+        font-size: 18px; /* Increased readability */
     }
 
     #about-know-more {
-        font-size: 16px;
+        font-size: 18px; /* Increased size */
+        display: block;
     }
 }
 
