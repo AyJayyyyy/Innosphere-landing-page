@@ -98,37 +98,77 @@
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    /* Adjust the padding */
+    /* Adjust padding */
     #footer-section {
         padding: 50px 20px;
     }
 
-    /* Adjust Footer Heading */
+    /* Adjust heading size */
     #footer-heading {
         font-size: 1.8rem;
     }
 
-    /* Adjust Footer Text */
+    /* Adjust text size */
     #footer-text {
         font-size: 1rem;
     }
 
-    /* Stack Footer Buttons Vertically */
-    #footer-buttons {
-        flex-direction: column;
-        gap: 15px;
+    /* Footer buttons image adjustments */
+    #footer-buttons img {
+        display: block;
+        width: auto; /* Ensures it keeps original size */
+        max-width: 150px; /* Prevents buttons from being too large */
     }
 
-    /* Stack Footer Bottom Content */
-    #footer-logo-container,
-    #footer-copyright,
-    #footer-social-icons {
-        flex: 1 100%;
+    /* Center and align footer bottom in ROW layout */
+    #footer-bottom {
+        display: flex;
+        flex-direction: row; /* Align in a row */
+        align-items: center;
+        justify-content: center; /* Center horizontally */
+        gap: 20px; /* Adds space between elements */
+        flex-wrap: wrap; /* Wrap when needed */
+        width: 100%;
         text-align: center;
     }
 
-    /* Adjust Social Media Icon Size */
+    /* Ensure footer logo is perfectly centered */
+    #footer-logo-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Align vertically */
+        text-align: center;
+        width: 100%; /* Ensures full width */
+    }
+
+    #footer-logo-container img {
+        display: block;
+        margin: 0 auto; /* Full centering */
+    }
+
+    /* Footer bottom elements - Keep them centered */
+    #footer-copyright,
+    #footer-social-icons {
+        flex: unset; /* Remove any forced width */
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Social media icons adjustment */
+    #footer-social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px; /* Slightly increased spacing */
+    }
+
     #footer-social-icons img {
-        height: 30px;
+        height: 50px;
     }
 }
+
+
+
+
