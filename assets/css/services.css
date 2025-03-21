@@ -125,3 +125,87 @@
 #service-innosphere-content-3 p {
     color: #ffffffa1;
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+    #services-section {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    /* Center Header Text */
+    #services-header {
+        text-align: left;
+        flex-basis: auto;
+    }
+
+    #services-header h2 {
+        font-size: 32px;
+        letter-spacing: -1px;
+    }
+
+    #services-header p {
+        font-size: 16px;
+        letter-spacing: -0.5px;
+    }
+
+    /* Scrollable Services Container */
+    #services-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 10px 0;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Keep Service Cards Design */
+    #service-innosphere-1,
+    #service-innosphere-2,
+    #service-innosphere-3 {
+        flex: 0 0 auto;
+        width: 85vw; /* Maintain card size */
+        max-width: 70vw;
+        height: 450px;
+        border-radius: 44px 0px 0px 44px; /* Keep original shape */
+        padding: 40px; /* Keep spacing */
+        scroll-snap-align: start;
+    }
+
+    /* Keep Content Inside the Cards */
+    #service-innosphere-content-1,
+    #service-innosphere-content-2,
+    #service-innosphere-content-3 {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+
+    /* Keep Font Sizes */
+    #service-innosphere-content-1 h2,
+    #service-innosphere-content-2 h2,
+    #service-innosphere-content-3 h2 {
+        font-size: 48px; /* Keep original size */
+    }
+
+    #service-innosphere-content-1 p,
+    #service-innosphere-content-2 p,
+    #service-innosphere-content-3 p {
+        font-size: 12px; /* Keep original size */
+        line-height: 18px;
+    }
+
+    /* Keep Button Styling */
+    #service-innosphere-content-1 button,
+    #service-innosphere-content-2 button,
+    #service-innosphere-content-3 button {
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+}
+
