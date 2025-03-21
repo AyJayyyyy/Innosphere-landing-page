@@ -1,58 +1,58 @@
 /* Navbar Styles */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 85px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 0 30px;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 30px;
+    z-index: 1000;
 }
 
 /* Logo */
 .logo {
-  padding: 15px;
+    padding: 15px;
 }
 
 .logo img {
-  height: 60px;
+    height: 60px;
 }
 
 /* Navigation Menu */
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  justify-content: center;
-  gap: 25px;
-  list-style: none;
-  margin: 0;
-  padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
 }
 
 .nav-menu li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 /* Contact Button */
 .contact-btn {
-  text-align: center;
-  padding: 15px;
+    text-align: center;
+    padding: 15px;
 }
 
 .contact-btn a {
-  background-color: #007bff;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 35px;
-  font-size: 18px;
-  display: inline-block;
-  margin: 0 30px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 30px;
 }
