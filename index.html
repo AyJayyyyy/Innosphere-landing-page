@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/services.css">
@@ -19,30 +20,44 @@
 <body
     style="margin: 0; padding: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; overflow-x: hidden; width: 100vw;">
 
-    <!-- Navbar -->
-    <div class="navbar">
-
-        <!-- Logo on the left -->
-        <div class="navbar-logo">
-            <img src="assets/images/logo.png" alt="Innosphere logo">
+    <!-- Navbar Starts -->
+        <div class="nav-main">
+            <div id="logo-container" class="logo-container">
+                <img src="/assets/images/logo.png" alt="Innosphere logo">
+            </div>
+            <ul class="menu-container">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#industries-section">Industries</a></li>
+                <li><a href="#resources-section">Resources</a></li>
+                <li><a href="#career-section">Career</a></li>
+                <li><a href="#about-section">About</a></li>
+            </ul>
+            <div class="btn-container">
+                <a class="btn" href="">Contact Us</a>
+            </div>
         </div>
-
-        <!-- Centered menu -->
-        <ul class="navbar-menu">
-            <li><a href="#home-section">Home</a></li>
-            <li><a href="#services-section">Services</a></li>
-            <li><a href="#industries-section">Industries</a></li>
-            <li><a href="#resources-section">Resources</a></li>
-            <li><a href="#career-section">Career</a></li>
-            <li><a href="#about-section">About</a></li>
-        </ul>
-
-        <!-- Button on the right -->
-        <div class="navbar-button">
-            <a href="#">Contact Us</a>
+        
+        <!-- Navbar mobile -->
+        <div class="nav-mobile" id="nav-mobile">
+            <div class="container">
+                <div id="logo-container-1" class="logo-container-1">
+                    <img src="/assets/images/logo-light.png" alt="Innosphere logo">
+                </div>
+                <ul class="menu-container">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services-section">Services</a></li>
+                    <li><a href="#industries-section">Industries</a></li>
+                    <li><a href="#resources-section">Resources</a></li>
+                    <li><a href="#career-section">Career</a></li>
+                    <li><a href="#about-section">About</a></li>
+                </ul>
+            </div>
+            <div class="btn-container">
+                <a class="btn-mobile" href="#">Contact Us</a>
+            </div>
         </div>
-
-    </div>
+        <!-- Navbar Ends -->
 
     <!-- Home Section -->
     <div id="home-section"
@@ -324,5 +339,7 @@
         });
     });
 </script>
+
+<script src="assets/js/script.js"></script>
 
 </html>
