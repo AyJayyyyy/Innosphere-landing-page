@@ -20,38 +20,14 @@
     style="margin: 0; padding: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; overflow-x: hidden; width: 100vw;">
 
     <!-- Navbar -->
-<div class="navbar">
-    <!-- Clickable Logo -->
-    <div class="logo" id="logo">
-        <img src="assets/images/logo.png" alt="Innosphere logo">
-    </div>
-
-    <!-- Centered menu for desktop only -->
-    <ul class="nav-menu">
-        <li><a href="#home-section">Home</a></li>
-        <li><a href="#services-section">Services</a></li>
-        <li><a href="#industries-section">Industries</a></li>
-        <li><a href="#resources-section">Resources</a></li>
-        <li><a href="#career-section">Career</a></li>
-        <li><a href="#about-section">About</a></li>
-    </ul>
-
-    <!-- Contact Button (Right Side) -->
-    <div class="contact-btn">
-        <a href="#">Contact Us</a>
-    </div>
-</div>
-
-<!-- Mobile Overlay -->
-<div class="overlay" id="overlay">
-    <div class="overlay-content">
-        <!-- Logo Inside Overlay -->
-        <div class="overlay-logo">
-            <img src="assets/images/overlaylogo.png" alt="Innosphere logo" id="overlay-logo">
+    <div class="navbar">
+        <!-- Clickable Logo -->
+        <div class="logo" id="logo">
+            <img src="assets/images/logo.png" alt="Innosphere logo">
         </div>
 
-        <!-- Mobile Navigation Menu -->
-        <ul>
+        <!-- Centered menu for desktop only -->
+        <ul class="nav-menu">
             <li><a href="#home-section">Home</a></li>
             <li><a href="#services-section">Services</a></li>
             <li><a href="#industries-section">Industries</a></li>
@@ -59,8 +35,37 @@
             <li><a href="#career-section">Career</a></li>
             <li><a href="#about-section">About</a></li>
         </ul>
+
+        <!-- Contact Button (Right Side) -->
+        <div class="contact-btn">
+            <a href="#">Contact Us</a>
+        </div>
     </div>
-</div>
+
+    <!-- Mobile Overlay -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <!-- Logo Inside Overlay -->
+            <div class="overlay-logo">
+                <img src="assets/images/overlaylogo.png" alt="Innosphere logo" id="overlay-logo">
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#industries-section">Industries</a></li>
+                <li><a href="#resources-section">Resources</a></li>
+                <li><a href="#career-section">Career</a></li>
+                <li><a href="#about-section">About</a></li>
+            </ul>
+        </div>
+
+        <!-- Clickable Black Backdrop (50%) -->
+        <div class="overlay-backdrop" id="overlay-backdrop"></div>
+    </div>
+
+
 
 
     <!-- Home Section -->
@@ -221,6 +226,21 @@
         </div>
     </div>
     <!-- Resources Section Ends -->
+
+    <!-- Career Starts -->
+    <div id="career-section"
+        style="width: 100vw; height: 100vh; background: url('assets/images/careerspic.jpg') no-repeat center center/cover; position: relative; display: flex; align-items: center; justify-content: flex-start;">
+        <div id="career-overlay"></div>
+        <div id="career-text-content">
+            <h1>Careers</h1>
+            <p>"Join our team and explore exciting career opportunities to grow professionally and make an impact."</p>
+            <div id="career-buttons">
+                <button id="career-apply">Apply</button>
+                <button id="career-know-more">Know more</button>
+            </div>
+        </div>
+    </div>
+    <!-- Career Ends -->
 
     <!-- About Us Section -->
     <div id="about-section">

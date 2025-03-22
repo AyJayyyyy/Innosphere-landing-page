@@ -61,17 +61,24 @@
 .overlay {
     position: fixed;
     top: 0;
-    left: -100%;  /* Initially hidden */
+    left: -100%; /* Initially hidden */
+    width: 100%; /* Cover full width */
+    height: 100%;
+    display: flex; /* Allow side-by-side layout */
+    transition: left 0.1s ease-in-out;
+    z-index: 2000;
+}
+
+
+/* Right side (Black Low Opacity with Blur) */
+.overlay-backdrop {
     width: 50%;
     height: 100%;
-    background: #215379;
-    color: white;
-    transition: left 0.3s ease-in-out;
-    z-index: 2000;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.3); /* Slightly reduced opacity */
+    backdrop-filter: blur(20px); /* Apply blur effect */
+    cursor: pointer; /* Indicate it is clickable */
 }
+
 
 /* Slide in when active */
 .overlay.active {
@@ -90,8 +97,15 @@
     width: 160px;
 }
 
+/* Left side (Blue background) */
 .overlay-content {
-    padding-left: 20px;
+    width: 50%;
+    height: 100%;
+    background: #215379;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 /* Align overlay menu items */
 .overlay-content ul {
