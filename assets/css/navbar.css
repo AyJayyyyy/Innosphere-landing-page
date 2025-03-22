@@ -23,7 +23,7 @@
     height: 60px;
 }
 
-/* Center Navigation Menu (Only for Desktop) */
+/* Center Navigation Menu (Desktop Only) */
 .nav-menu {
     display: flex;
     justify-content: center;
@@ -57,14 +57,14 @@
     margin: 0 30px;
 }
 
-/* Overlay styles */
+/* Mobile Overlay Styles */
 .overlay {
     position: fixed;
     top: 0;
-    left: -100%;  /* Start hidden off-screen */
-    width: 75%;
+    left: -100%;  /* Initially hidden */
+    width: 50%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: #215379;
     color: white;
     transition: left 0.3s ease-in-out;
     z-index: 2000;
@@ -73,18 +73,27 @@
     padding: 20px;
 }
 
-/* When menu is active, slide it in */
+/* Slide in when active */
 .overlay.active {
     left: 0;
 }
 
-/* Style for the logo inside the overlay */
-.overlay-content img {
-    width: 150px;
+/* Logo inside overlay */
+.overlay-logo {
+    text-align: left;
     margin-bottom: 20px;
+    margin-top: 9px;
+
 }
 
-/* Align menu items */
+.overlay-logo img {
+    width: 160px;
+}
+
+.overlay-content {
+    padding-left: 20px;
+}
+/* Align overlay menu items */
 .overlay-content ul {
     list-style: none;
     padding: 0;
@@ -98,13 +107,6 @@
     color: white;
     text-decoration: none;
     font-size: 20px;
-}
-
-
-
-/* Show overlay when active */
-.overlay.active {
-    left: 0; /* Slide in */
 }
 
 /* Mobile View */
@@ -121,7 +123,7 @@
     }
 
     .nav-menu {
-        display: none; /* Hide menu */
+        display: none; /* Hide desktop menu */
     }
 
     .contact-btn {

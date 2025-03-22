@@ -20,14 +20,38 @@
     style="margin: 0; padding: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; overflow-x: hidden; width: 100vw;">
 
     <!-- Navbar -->
-    <div class="navbar">
-        <!-- Clickable Logo -->
-        <div class="logo" id="menuToggle">
-            <img src="assets/images/logo.png" alt="Innosphere logo">
-        </div>        
+<div class="navbar">
+    <!-- Clickable Logo -->
+    <div class="logo" id="logo">
+        <img src="assets/images/logo.png" alt="Innosphere logo">
+    </div>
 
-        <!-- Centered menu for web view -->
-        <ul class="nav-menu">
+    <!-- Centered menu for desktop only -->
+    <ul class="nav-menu">
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#services-section">Services</a></li>
+        <li><a href="#industries-section">Industries</a></li>
+        <li><a href="#resources-section">Resources</a></li>
+        <li><a href="#career-section">Career</a></li>
+        <li><a href="#about-section">About</a></li>
+    </ul>
+
+    <!-- Contact Button (Right Side) -->
+    <div class="contact-btn">
+        <a href="#">Contact Us</a>
+    </div>
+</div>
+
+<!-- Mobile Overlay -->
+<div class="overlay" id="overlay">
+    <div class="overlay-content">
+        <!-- Logo Inside Overlay -->
+        <div class="overlay-logo">
+            <img src="assets/images/overlaylogo.png" alt="Innosphere logo" id="overlay-logo">
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <ul>
             <li><a href="#home-section">Home</a></li>
             <li><a href="#services-section">Services</a></li>
             <li><a href="#industries-section">Industries</a></li>
@@ -35,27 +59,8 @@
             <li><a href="#career-section">Career</a></li>
             <li><a href="#about-section">About</a></li>
         </ul>
-
-        <!-- Contact Button -->
-        <div class="contact-btn">
-            <a href="#">Contact Us</a>
-        </div>
     </div>
-
-    <!-- Overlay Menu (Hidden by Default) -->
-    <div class="overlay" id="mobileMenu">
-        <div class="overlay-content">
-            <img src="assets/images/logo-light.png" alt="Innosphere logo light">
-            <ul>
-                <li><a href="#home-section">Home</a></li>
-                <li><a href="#services-section">Services</a></li>
-                <li><a href="#industries-section">Industries</a></li>
-                <li><a href="#resources-section">Resources</a></li>
-                <li><a href="#career-section">Career</a></li>
-                <li><a href="#about-section">About</a></li>
-            </ul>
-        </div>
-    </div>
+</div>
 
 
     <!-- Home Section -->
@@ -321,6 +326,6 @@
     });
 </script>
 
-<!-- <script src="assets/js/script.js"></script> -->
+<script src="assets/js/scripts.js"></script>
 
 </html>
