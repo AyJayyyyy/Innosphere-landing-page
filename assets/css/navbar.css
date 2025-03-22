@@ -1,4 +1,4 @@
-/* Navbar Styles */
+/* Default Navbar Styles (For Desktop) */
 .navbar {
     position: fixed;
     top: 0;
@@ -16,16 +16,16 @@
 /* Logo */
 .logo {
     padding: 15px;
+    cursor: pointer; /* Make logo clickable */
 }
 
 .logo img {
     height: 60px;
 }
 
-/* Navigation Menu */
+/* Center Navigation Menu (Only for Desktop) */
 .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
+    display: flex;
     justify-content: center;
     gap: 25px;
     list-style: none;
@@ -55,4 +55,82 @@
     font-size: 18px;
     display: inline-block;
     margin: 0 30px;
+}
+
+/* Overlay styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;  /* Start hidden off-screen */
+    width: 75%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* When menu is active, slide it in */
+.overlay.active {
+    left: 0;
+}
+
+/* Style for the logo inside the overlay */
+.overlay-content img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Align menu items */
+.overlay-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.overlay-content li {
+    margin: 15px 0;
+}
+
+.overlay-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+/* Show overlay when active */
+.overlay.active {
+    left: 0; /* Slide in */
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+        height: auto;
+    }
+
+    .logo img {
+        height: 40px; /* Reduce logo size */
+    }
+
+    .nav-menu {
+        display: none; /* Hide menu */
+    }
+
+    .contact-btn {
+        padding: 5px 0;
+        margin: 0 13px;
+    }
+
+    .contact-btn a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 }

@@ -21,12 +21,12 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <!-- Logo on the left -->
-        <div class="logo">
+        <!-- Clickable Logo -->
+        <div class="logo" id="menuToggle">
             <img src="assets/images/logo.png" alt="Innosphere logo">
-        </div>
+        </div>        
 
-        <!-- Centered menu -->
+        <!-- Centered menu for web view -->
         <ul class="nav-menu">
             <li><a href="#home-section">Home</a></li>
             <li><a href="#services-section">Services</a></li>
@@ -36,11 +36,27 @@
             <li><a href="#about-section">About</a></li>
         </ul>
 
-        <!-- Button on the right -->
+        <!-- Contact Button -->
         <div class="contact-btn">
             <a href="#">Contact Us</a>
         </div>
-    </div>    
+    </div>
+
+    <!-- Overlay Menu (Hidden by Default) -->
+    <div class="overlay" id="mobileMenu">
+        <div class="overlay-content">
+            <img src="assets/images/logo-light.png" alt="Innosphere logo light">
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#industries-section">Industries</a></li>
+                <li><a href="#resources-section">Resources</a></li>
+                <li><a href="#career-section">Career</a></li>
+                <li><a href="#about-section">About</a></li>
+            </ul>
+        </div>
+    </div>
+
 
     <!-- Home Section -->
     <div id="home-section"
@@ -201,8 +217,6 @@
     </div>
     <!-- Resources Section Ends -->
 
-    
-
     <!-- About Us Section -->
     <div id="about-section">
         <!-- First Column (60%) - Compact Content -->
@@ -212,7 +226,7 @@
                 <h1>ABOUT</h1>
                 <h1>US</h1>
             </div>
-            
+
 
             <!-- Larger Image -->
             <img id="about-image1" src="assets/images/AboutUs-image1.png" alt="Team Image">
@@ -282,11 +296,6 @@
         </div>
     </div>
     <!-- Footer Ends -->
-
-
-
-
-
 
 </body>
 
