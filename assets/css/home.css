@@ -43,7 +43,6 @@
 
 #home-buttons {
     margin-top: 15px;
-    display: flex;
     gap: 12px;
 }
 
@@ -75,4 +74,37 @@
 
 #home-know-more:hover {
     background-color: #ccc;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    #home-text-content {
+        left: 0; /* Center content for smaller screens */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    #home-buttons {
+        margin-top: 20px;
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center;
+        gap: 15px;
+    }
+
+    #home-apply, #home-know-more {
+        width: 80%; /* Buttons take up 80% of the screen width */
+        max-width: 160px; /* Max width for buttons */
+    }
+
+    #home-text-content h1 {
+        font-size: 48px; /* Reduce font size on smaller screens */
+    }
+
+    #home-text-content h2 {
+        font-size: 26px; /* Adjust h2 font size */
+    }
+
+    #home-text-content p {
+        font-size: 16px; /* Reduce font size for readability */
+        margin: 5px 10px 20px 10px;
+    }
 }
